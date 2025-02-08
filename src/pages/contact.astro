@@ -1,0 +1,27 @@
+---
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<html>
+  <head>
+    <title>Contacto - Uriel Perez</title>
+    <meta name="description" content="Formulario de contacto de Uriel Alejandro Perez Valdovinos">
+    <link rel="stylesheet" href="C:/Users/uripe/OneDrive/Escritorio/irregular-ice/src/styles/global.css">
+  </head>
+  <body>
+    <Navbar />
+    <main class="container text-center">
+      <div class="card">
+        <h1>Contacto</h1>
+        <form class="mt-6 space-y-4">
+          <input type="text" class="w-full p-2 border rounded bg-white text-gray-900" placeholder="Tu nombre" />
+          <input type="email" class="w-full p-2 border rounded bg-white text-gray-900" placeholder="Tu correo" />
+          <textarea class="w-full p-2 border rounded bg-white text-gray-900" rows="4" placeholder="Tu mensaje"></textarea>
+          <button type="submit" class="button">Enviar</button>
+        </form>
+      </div>
+    </main>
+    <Footer />
+  </body>
+</html>

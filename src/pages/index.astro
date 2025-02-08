@@ -1,0 +1,111 @@
+---
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<html>
+  <head>
+    <title>Uriel Perez</title>
+    <meta name="description" content="Informacion sobre Uriel Alejandro Perez Valdovinos">
+    <link rel="stylesheet" href="C:/Users/uripe/OneDrive/Escritorio/irregular-ice/src/styles/global.css">
+  </head>
+  <body class="bg-gradient-to-r from-blue-900 to-purple-800 text-white">
+    <Navbar />
+    <main class="flex justify-center items-center min-h-screen py-12 mb-16">
+      <div class="text-center">
+        <h1 class="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">Sobre Mi</h1>
+        <p class="mt-4 text-lg text-gray-200">Soy un ingeniero en computacion en formacion en la Universidad de Guadalajara, con un enfoque en desarrollo web y una solida comprension de la ingenieria informatica. A lo largo de mi carrera academica y experiencia laboral, he desarrollado habilidades en programacion y diseno web, manejando herramientas y tecnologias como HTML, CSS, JavaScript, PHP, y frameworks como Astroc, colaborando en metodologias agiles. Mi enfoque siempre ha sido hacia el desarrollo de soluciones eficientes, con una fuerte inclinacion hacia la mejora continua y la adaptabilidad en entornos colaborativos.</p>
+        <p class="mt-4 text-lg text-gray-200">Actualmente, estoy cursando la carrera de Ingenieria en Computacion en el CUCEI. Durante mi servicio social en Inventors Lab, he tenido la oportunidad de trabajar en desarrollo tanto en el back-end como en el front-end, colaborando estrechamente con equipos multidisciplinarios para mejorar los procesos y herramientas del laboratorio.</p>
+        
+        <a href="#proyec" class="button mt-6 inline-block px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-lg shadow-lg transform hover:scale-105 hover:from-green-500 hover:to-blue-400 transition-all">Ver Proyectos</a>
+      </div>
+
+    </main>
+    
+    <main id="proyec" class="flex justify-center items-center py-12 mb-40">
+      <div class="container max-w-4xl w-full">
+        <h1 class="text-4xl font-bold text-gray-800 mb-8 text-center">Mis Proyectos</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="card bg-blue-500 p-6 rounded-lg shadow-lg text-white transform hover:scale-105 transition-transform duration-300">
+            <h2 class="text-2xl font-semibold mb-4">bilingualjob</h2>
+            <p class="text-lg">Desarrollo de una plataforma web utilizando HTML, CSS, JS y PHP con conexion a SQLite.</p>
+            <a href="https://bilingualjobstostartasap.com" class="flex items-center justify-center mt-4 inline-block bg-white text-blue-500 px-4 py-2 rounded font-semibold shadow-lg transform hover:scale-105 transition-transform duration-300">Ver</a>
+          </div>
+          <div class="card bg-green-500 p-6 rounded-lg shadow-lg text-white transform hover:scale-105 transition-transform duration-300">
+            <h2 class="text-2xl font-semibold mb-4">GiraCUCEIPixeles</h2>
+            <p class="text-lg">Proyecto con el framework Astro para promocionar cursos universitarios.</p>
+          </div>
+          <div class="card bg-purple-500 p-6 rounded-lg shadow-lg text-white transform hover:scale-105 transition-transform duration-300">
+            <h2 class="text-2xl font-semibold mb-4">Mail Script</h2>
+            <p class="text-lg">Script en Python para el envio automatico de correos.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+    <main id="contac" class="flex justify-center items-center py-12 mb-40">
+      <div class="card bg-blue-500 p-6 rounded-lg shadow-lg text-white max-w-xl mx-auto">
+        <h1 class="text-4xl font-bold mb-6 text-center">Contacto</h1>
+        <form id="contactForm" class="mt-6 space-y-4">
+          <input type="text" id="name" name="name" class="w-full p-2 border rounded bg-white text-gray-900" placeholder="Tu nombre" required />
+          <input type="email" id="email" name="email" class="w-full p-2 border rounded bg-white text-gray-900" placeholder="Tu correo" required />
+          <textarea id="message" name="message" class="w-full p-2 border rounded bg-white text-gray-900" rows="4" placeholder="Tu mensaje" required></textarea>
+          <button type="submit" class="w-full bg-white text-blue-500 px-4 py-2 rounded font-semibold shadow-lg transform hover:scale-105 transition-transform duration-300">Enviar</button>
+        </form>
+      </div>
+    </main>
+
+    <main id="skillsSection" class="w-full bg-white py-12 ">
+      <div class="container mx-auto px-4">
+        <h1 class="text-4xl font-bold mb-6 text-gray-800 text-center">Skills</h1>
+        <div class="flex flex-wrap justify-center gap-4">
+          <span class="bg-gray-300 text-gray-800 px-4 py-2 rounded-full text-sm font-semibold">C++</span>
+          <span class="bg-gray-300 text-gray-800 px-4 py-2 rounded-full text-sm font-semibold">Python</span>
+          <span class="bg-gray-300 text-gray-800 px-4 py-2 rounded-full text-sm font-semibold">JavaScript</span>
+          <span class="bg-gray-300 text-gray-800 px-4 py-2 rounded-full text-sm font-semibold">PHP</span>
+          <span class="bg-gray-300 text-gray-800 px-4 py-2 rounded-full text-sm font-semibold">HTML</span>
+          <span class="bg-gray-300 text-gray-800 px-4 py-2 rounded-full text-sm font-semibold">CSS</span>
+          <span class="bg-gray-300 text-gray-800 px-4 py-2 rounded-full text-sm font-semibold">MySQL</span>
+          <span class="bg-gray-300 text-gray-800 px-4 py-2 rounded-full text-sm font-semibold">SQLite</span>
+          <span class="bg-gray-300 text-gray-800 px-4 py-2 rounded-full text-sm font-semibold">Git</span>
+          <span class="bg-gray-300 text-gray-800 px-4 py-2 rounded-full text-sm font-semibold">Astro</span>
+        </div>
+      </div>
+    </main>
+    
+    
+    <Footer />
+  </body>
+</html>
+
+<script>
+  // Inicializa EmailJS con tu Public Key (ahora User ID)
+  emailjs.init('5yGFWmyBK_TZrCFOI');  // Reemplaza con tu Public Key
+
+  // Función para manejar el envío del formulario
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();  // Previene el comportamiento por defecto del formulario
+
+    // Recoge los valores del formulario
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    // Prepara los datos para enviar
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      message: message
+    };
+
+    // Envía el correo usando el Template ID y Public Key
+    emailjs.send('service_nct2262', 'template_05e13dn', templateParams)
+      .then(function(response) {
+        console.log('Success:', response);
+        alert('Correo enviado exitosamente');
+      }, function(error) {
+        console.log('Error:', error);
+        alert('Hubo un error al enviar el correo. Inténtalo de nuevo.');
+      });
+  });
+</script>
